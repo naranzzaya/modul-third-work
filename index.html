@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script type="text/javascript">
+
+
+
+    $(document).ready(function(){
+
+      // $('body').hasClass(function () {
+      //   if ($('body').hasClass("bghi")) {
+      //     $('body').removeClass("bghi");
+      //     $('body').removeClass("dino");
+      //     $('body').removeClass("music");
+      //     $('body').removeClass("buttons");
+      //   }
+      // });
+
+
+      // кнопка дальше
+      // $(".next").click(function () {
+      //   $('body').removeClass("bghi");
+      //   $('body').addClass("bgh1");
+      //   $('body').addClass("dino");
+      //   $('body').addClass("music");
+      //   $('body').addClass("buttons");
+      // });
+
+      // scroll
+
+      let x;
+      $(window).on('scroll', function() {
+	      x = $(window).scrollTop();
+	      $('.clouds').css('left', -5 + parseInt(x / 5) + 'vw');
+      });
+
+      // 1 кнопка
+      $(".back_change").click(function () {
+        if ($('body').hasClass("bg1")) {
+          $('body').removeClass("bg1");
+          $('body').addClass("bg2");
+        } else if ($('body').hasClass("bg2")) {
+          $('body').removeClass("bg2");
+          $('body').addClass("bg3");
+        } else if ($('body').hasClass("bg3")) {
+          $('body').removeClass("bg3");
+          $('body').addClass("bg4");
+        } else if ($('body').hasClass("bg4")) {
+          $('body').removeClass("bg4");
+          $('body').addClass("bg1");
+        }
+      });
+
+      // 2 кнопка
+      $(".dino_change").click(function () {
+        if ($('.dino').hasClass("dino_bg1")) {
+          $('.dino').removeClass("dino_bg1");
+          $('.dino').addClass("dino_bg2");
+        } else if ($('.dino').hasClass("dino_bg2")) {
+          $('.dino').removeClass("dino_bg2");
+          $('.dino').addClass("dino_bg3");
+        } else if ($('.dino').hasClass("dino_bg3")) {
+          $('.dino').removeClass("dino_bg3");
+          $('.dino').addClass("dino_bg4");
+        } else if ($('.dino').hasClass("dino_bg4")) {
+          $('.dino').removeClass("dino_bg4");
+          $('.dino').addClass("dino_bg1");
+        }
+      });
+
+      // 3 кнопка
+      $(".music_change").click(function () {
+        if ($('.music').hasClass("drum")) {
+          $('.music').removeClass("drum");
+          $('.music').addClass("piano");
+        } else if ($('.music').hasClass("piano")) {
+          $('.music').removeClass("piano");
+          $('.music').addClass("guitar");
+        } else if ($('.music').hasClass("guitar")) {
+          $('.music').removeClass("guitar");
+          $('.music').addClass("drum");
+        }
+      });
+    });
+    </script>
+  </head>
+  <body class="bg1">
+
+
+      <div class="dino dino_bg1"></div>
+      <div class="music drum"></div>
+      <div class="buttons">
+        <div class="back_change"></div>
+        <div class="dino_change"></div>
+        <div class="music_change"></div>
+        <div class="done"></div>
+      </div>
+      <div class="next"></div>
+
+    <!-- элементы для фонов -->
+    <!-- <div class="leaves"><img src="images/leaves.svg" alt=""></div> -->
+    <div class="leaves"></div>
+    <div class="clouds"></div>
+    <div class="bubble"></div>
+    <div class="clouds"></div>
+    <div class="lights"></div>
+  </body>
+</html>
