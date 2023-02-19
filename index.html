@@ -6,37 +6,70 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="styles/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script type="text/javascript">
-
-
 
     $(document).ready(function(){
 
-      // $('body').hasClass(function () {
-      //   if ($('body').hasClass("bghi")) {
-      //     $('body').removeClass("bghi");
-      //     $('body').removeClass("dino");
-      //     $('body').removeClass("music");
-      //     $('body').removeClass("buttons");
-      //   }
-      // });
+      // приветственный экран
+      $(function () {
+        if ($('body').hasClass("bghi")) {
+          $('body').removeClass("dino");
+          $('body').removeClass("music");
+          $('body').removeClass("buttons");
+          $('.bye').addClass("none");
+          $('.bottom').addClass("none");
+        }
+      });
 
-
-      // кнопка дальше
-      // $(".next").click(function () {
-      //   $('body').removeClass("bghi");
-      //   $('body').addClass("bgh1");
-      //   $('body').addClass("dino");
-      //   $('body').addClass("music");
-      //   $('body').addClass("buttons");
-      // });
-
+      // облака в 1-в локации
       // scroll
-
       let x;
       $(window).on('scroll', function() {
 	      x = $(window).scrollTop();
-	      $('.clouds').css('left', -5 + parseInt(x / 5) + 'vw');
+	      $('.cloud').css('left', -5 + parseInt(x / 5) + 'vw');
+      });
+
+      // пузыри во 2-ом локации
+      // revert when dropped
+      $( function() {
+      $( ".draggable_bubble" ).draggable({ revert: "invalid" });
+      $( "bubbles" ).droppable({
+        classes: {
+          "ui-droppable-hover": "ui-state-hover"
+      }
+      });
+    });
+
+      // облака в 3-ем локации
+      // draggable
+      $(function() {
+      $(".cloud_one").draggable();
+      $(".cloud_two").draggable();
+      $(".cloud_three").draggable();
+      $(".cloud_four").draggable();
+      $(".cloud_five").draggable();
+      $(".cloud_six").draggable();
+      $(".cloud_seven").draggable();
+    });
+
+      // добавить анимацию по клику в 4-ом локации
+      $("").click(function () {
+        $('.lights').addClass("animation");
+        });
+
+
+      // кнопка "дальше"
+      $(".next").click(function () {
+        $('body').removeClass("bghi");
+        $('body').addClass("bg1");
+        $('.dino').removeClass("none");
+        $('.music').removeClass("none");
+        $('.cloud').removeClass("none");
+        $('.leaves').removeClass("none");
+        $('.buttons').removeClass("none");
+        $('.next').addClass("none");
+        $('.instruction').addClass("none");
       });
 
       // 1 кнопка
@@ -44,15 +77,35 @@
         if ($('body').hasClass("bg1")) {
           $('body').removeClass("bg1");
           $('body').addClass("bg2");
+
+          $('.next').addClass("none");
+          $('.leaves').addClass("none");
+          $('.cloud').addClass("none");
+          $('.clouds').addClass("none");
+          $('.lights').addClass("none");
+          $('.bubbles').removeClass("none");
         } else if ($('body').hasClass("bg2")) {
           $('body').removeClass("bg2");
           $('body').addClass("bg3");
+
+          $('.next').addClass("none");
+          $('.clouds').removeClass("none");
         } else if ($('body').hasClass("bg3")) {
           $('body').removeClass("bg3");
           $('body').addClass("bg4");
+
+          $('.next').addClass("none");
+          $('.clouds').addClass("none");
+          $('.bubbles').addClass("none");
+          $('.lights').removeClass("none");
         } else if ($('body').hasClass("bg4")) {
           $('body').removeClass("bg4");
           $('body').addClass("bg1");
+
+          $('.next').addClass("none");
+          $('.lights').addClass("none");
+          $('.cloud').removeClass("none");
+          $('.leaves').removeClass("none");
         }
       });
 
@@ -86,28 +139,72 @@
           $('.music').addClass("drum");
         }
       });
+
+      // 4 кнопка
+      $(".done").click(function () {
+        if ($('body').hasClass("bg1")) {
+          $('body').removeClass("bg1");
+          $('body').addClass("bgbye");
+        } else if ($('body').hasClass("bg2")) {
+          $('body').removeClass("bg2");
+          $('body').addClass("bgbye");
+        } else if ($('body').hasClass("bg3")) {
+          $('body').removeClass("bg3");
+          $('body').addClass("bgbye");
+        } else if($('body').hasClass("bg4")) {
+          $('body').removeClass("bg4");
+          $('body').addClass("bgbye");
+        }
+        $('.dino').addClass("none");
+        $('.music').addClass("none");
+        $('.buttons').addClass("none");
+        $('.cloud').addClass("none");
+        $('.leaves').addClass("none");
+        $('.bubbles').addClass("none");
+        $('.clouds').addClass("none");
+        $('.lights').addClass("none");
+        $('.bye').removeClass("none");
+        $('.bottom').removeClass("none");
+      });
     });
     </script>
   </head>
-  <body class="bg1">
-
-
-      <div class="dino dino_bg1"></div>
-      <div class="music drum"></div>
-      <div class="buttons">
-        <div class="back_change"></div>
-        <div class="dino_change"></div>
-        <div class="music_change"></div>
-        <div class="done"></div>
-      </div>
-      <div class="next"></div>
-
-    <!-- элементы для фонов -->
-    <!-- <div class="leaves"><img src="images/leaves.svg" alt=""></div> -->
-    <div class="leaves"></div>
-    <div class="clouds"></div>
-    <div class="bubble"></div>
-    <div class="clouds"></div>
-    <div class="lights"></div>
+  <body class="bghi">
+    <div class="dino dino_bg1 none"></div>
+    <div class="music drum none"></div>
+    <div class="buttons none">
+      <div class="back_change"></div>
+      <div class="dino_change"></div>
+      <div class="music_change"></div>
+      <div class="done"></div>
+    </div>
+    <div class="next"></div>
+    <div class="instruction"><p>Динозавры нашего музыкального клуба гастролируют по интересным местам! Чтобы посетить концерт, вам нужно выбрать место и артиста-динозавра по вашим вкусам. Поехали!</p></div>
+    <!-- элементы для локации-->
+    <div class="leaves none"></div>
+    <div class="cloud none"></div>
+    <div class="bubbles none">
+      <div class="draggable_bubble"></div>
+    </div>
+    <div class="clouds none">
+      <div class="cloud_one"></div>
+      <div class="cloud_two"></div>
+      <div class="cloud_three"></div>
+      <div class="cloud_four"></div>
+      <div class="cloud_five"></div>
+      <div class="cloud_six"></div>
+      <div class="cloud_seven"></div>
+    </div>
+    <div class="lights none"></div>
+    <div class="bye"></div>
+    <div class="bottom">
+      <p>Арт-практика</p>
+      <p>Б22ДЗ09</p>
+      <p>Студент</p>
+      <p>Наранзаяа Оюунбаатар</p>
+      <p>Куратор</p>
+      <p>Ярослав Субботин</p>
+      <div class="logo"></div>
+    </div>
   </body>
 </html>
