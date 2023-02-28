@@ -1,0 +1,159 @@
+@media only screen and (min-width: 3px) and (max-width: 389px){
+  .next{
+    width: 14.3vw;
+    height: 14.3vw;
+    top: 60%;
+    right: 43%;
+  }
+  .instruction{
+    width: 42vw;
+    height: 40vw;
+    top: 33%;
+    right: 28%;
+  }
+  .instruction p{
+    font-size: 11px;
+  }
+  .bghi {
+    background-image: url('../images/hi_320.svg');
+  }
+  .bg1 {
+    background-image: url('../images/background_1_320.svg');
+  }
+  .bg2 {
+    background-image: url('../images/background_2_320.svg');
+  }
+  .bg3 {
+    background-image: url('../images/background_3_320.svg');
+  }
+  .bg4 {
+    background-image: url('../images/background_4_320.svg');
+  }
+  .bgbye {
+    background-image: url('../images/bye_320.svg');
+  }
+  .dino{
+    width: 37.3vw;
+    height: 50.5vw;
+    top: 85vw;
+    right: 37.4vw;
+  }
+  .music{
+    width: 62vw;
+    height: 62vw;
+    top: 75vw;
+    right: 17.4vw;
+  }
+  .buttons{
+    width: 88.8vw;
+    height: 18vw;
+    top: 87%;
+    right: 6.1%;
+  }
+  .back_change{
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    top: 0;
+    right: 0;
+  }
+  .dino_change{
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    top: 0;
+    right: 0;
+  }
+  .music_change{
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    top: 0;
+    right: 0;
+  }
+  .done{
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    top: 0;
+    right: -15%;
+  }
+  .cloud{
+    top: 8vw;
+    left: 7vw;
+    height: 40vw;
+    width: 81vw;
+    background-image: url('../images/cloud_320.svg');
+  }
+  .draggable_bubble{
+    top: 15vw;
+    left: 7vw;
+    height: 63.6vw;
+    width: 88vw;
+    background-image: url('../images/bubbles_320.svg');
+  }
+  .cloud_one{
+    top: 17%;
+    left: 9%;
+    height: 62%;
+    width: 40%;
+  }
+  .cloud_two{
+    top: 70%;
+    left: 25%;
+    height: 50%;
+    width: 32%;
+  }
+  .cloud_three{
+    top: -60%;
+    left: 65%;
+    height: 50%;
+    width: 28%;
+  }
+  .cloud_four{
+    top: -110%;
+    left: 8%;
+    height: 40%;
+    width: 22%;
+  }
+  .cloud_five{
+    top: -124%;
+    left: 55%;
+    height: 35%;
+    width: 20%;
+  }
+  .cloud_six{
+    top: -10%;
+    left: 3%;
+    height: 42%;
+    width: 27%;
+  }
+  .cloud_seven{
+    top: -95%;
+    left: 58%;
+    height: 62%;
+    width: 40%;
+  }
+  .lights{
+    top: 16vw;
+    left: 5vw;
+    height: 144vw;
+    width: 89vw;
+    background-image: url('../images/lights_320.svg');
+  }
+  .bye{
+    width: 48vw;
+    height: 28vw;
+    top: 33%;
+    right: 25%;
+  }
+  .logo{
+    width: 31vw;
+    height: 13vw;
+    top: -29vw;
+    right: 67vw;
+  }
+  .bottom p{
+    font-size: 6px;
+  }
+}

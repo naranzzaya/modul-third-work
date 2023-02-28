@@ -31,7 +31,9 @@
   border-radius: 1vw;
   border: 0.6vw solid #FFFFFF;
   text-align: center;
-  font-family: 'PPPangramSansRounded'
+}
+p{
+font-family: 'PPPangramSansRounded-Medium', sans-serif;
 }
 /* background */
 body {
