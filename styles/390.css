@@ -1,53 +1,53 @@
-@media only screen and (min-width: 3px) and (max-width: 389px){
+@media only screen and (min-width: 390px) and (max-width: 833px){
   .next{
-    width: 14.3vw;
-    height: 14.3vw;
-    top: 70%;
+    width: 15.2vw;
+    height: 15.2vw;
+    top: 60%;
     right: 43%;
   }
   .instruction{
-    width: 42vw;
+    width: 43vw;
     height: 40vw;
-    top: 33%;
+    top: 35%;
     right: 28%;
   }
   .instruction p{
-    font-size: 9px;
+    font-size: 11px;
   }
   .bghi {
-    background-image: url('../images/hi_320.svg');
+    background-image: url('../images/hi_390.svg');
   }
   .bg1 {
-    background-image: url('../images/background_1_320.svg');
+    background-image: url('../images/background_1_390.svg');
   }
   .bg2 {
-    background-image: url('../images/background_2_320.svg');
+    background-image: url('../images/background_2_390.svg');
   }
   .bg3 {
-    background-image: url('../images/background_3_320.svg');
+    background-image: url('../images/background_3_390.svg');
   }
   .bg4 {
-    background-image: url('../images/background_4_320.svg');
+    background-image: url('../images/background_4_390.svg');
   }
-  .bgbye {
-    background-image: url('../images/bye_320.svg');
+  .bgbye{
+    background-image: url('../images/bye_390.svg');
   }
   .dino{
-    width: 37.3vw;
-    height: 50.5vw;
-    top: 85vw;
-    right: 37.4vw;
+    width: 40.3vw;
+    height: 52.5vw;
+    top: 121vw;
+    right: 32.4vw;
   }
   .music{
     width: 62vw;
     height: 62vw;
-    top: 75vw;
-    right: 17.4vw;
+    top: 117.6vw;
+    right: 20vw;
   }
   .buttons{
     width: 88.8vw;
     height: 18vw;
-    top: 96%;
+    top: 93%;
     right: 6.1%;
   }
   .back_change{
@@ -79,78 +79,78 @@
     right: -15%;
   }
   .cloud{
-    top: 8vw;
+    top: 15vw;
     left: 7vw;
     height: 40vw;
     width: 81vw;
     background-image: url('../images/cloud_320.svg');
   }
   .draggable_bubble{
-    top: 15vw;
+    top: 30vw;
     left: 7vw;
     height: 63.6vw;
     width: 88vw;
     background-image: url('../images/bubbles_320.svg');
   }
   .cloud_one{
-    top: 17%;
+    top: 30%;
     left: 9%;
     height: 62%;
     width: 40%;
   }
   .cloud_two{
-    top: 70%;
+    top: 83%;
     left: 25%;
     height: 50%;
     width: 32%;
   }
   .cloud_three{
-    top: -60%;
+    top: -47%;
     left: 65%;
     height: 50%;
     width: 28%;
   }
   .cloud_four{
-    top: -110%;
+    top: -97%;
     left: 8%;
     height: 40%;
     width: 22%;
   }
   .cloud_five{
-    top: -124%;
+    top: -111%;
     left: 55%;
     height: 35%;
     width: 20%;
   }
   .cloud_six{
-    top: -10%;
+    top: 3%;
     left: 3%;
     height: 42%;
     width: 27%;
   }
   .cloud_seven{
-    top: -95%;
+    top: -82%;
     left: 58%;
     height: 62%;
     width: 40%;
   }
   .lights{
-    top: 16vw;
+    top: 36vw;
     left: 5vw;
     height: 144vw;
     width: 89vw;
-    background-image: url('../images/lights_320.svg');
+    background-image: url('../images/lights_390.svg');
   }
   .bye{
     width: 52vw;
     height: 18vw;
-    top: 33%;
+    top: 40%;
     right: 23%;
   }
   .bye p{
     margin-top: 10px;
     margin-top: 15px;
-    font-size: 9px;
+    font-size: 11px;
   }
   .bottom p{
     font-size: 6px;

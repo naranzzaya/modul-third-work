@@ -1,13 +1,7 @@
-/* .main{
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  background-size: cover;
-  background-image: url('../images/hi.svg');
-} */
+p{
+  color: #FFFFFF;
+  font-family: 'PPPangramSansRounded-Medium', sans-serif;
+}
 .next{
   position: absolute;
   top: 65%;
@@ -32,14 +26,14 @@
   border: 0.6vw solid #FFFFFF;
   text-align: center;
 }
-p{
-font-family: 'PPPangramSansRounded-Medium', sans-serif;
+.instruction p{
+  font-size: 16px;
 }
 /* background */
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: 105vh;
   display: flex;
   background-position: center;
   background-repeat: no-repeat;
@@ -111,7 +105,6 @@ body {
 .guitar{
   background-image: url('../images/guitar.svg');
 }
-
 /* buttons */
 .buttons{
   position: absolute;
@@ -166,13 +159,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .none{
   display: none;
 }
 /* element */
 .leaves{
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 0vw;
   height: 18vw;
@@ -181,6 +173,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 10;
   animation: leaf 2s ease-in-out infinite;
 }
 .cloud{
@@ -329,10 +322,14 @@ body {
   box-sizing: border-box;
   border-radius: 1vw;
   border: 0.6vw solid #FFFFFF;
+  align-content: center;
+}
+.bye p{
+  font-size: 16px;
 }
 .bottom{
   margin:auto;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 0;
   height: 8vw;
@@ -340,15 +337,45 @@ body {
   background: #84BC33;
 }
 .bottom p{
-  display: inline-block;
+  font-size: 16px;
 }
-p{
-  color: #FFFFFF;
+.one{
+  position: absolute;
+  left: 10%;
+  top: 25%;
+  font-weight: bold;
+}
+.two{
+  position: absolute;
+  left: 30%;
+  top: 25%;
+  font-weight: bold;
+}
+.three{
+  position: absolute;
+  left: 55%;
+  top: 25%;
+  font-weight: bold;
+}
+.four{
+  position: absolute;
+  left: 10%;
+  top: 50%;
+}
+.five{
+  position: absolute;
+  left: 30%;
+  top: 50%;
+}
+.six{
+  position: absolute;
+  left: 55%;
+  top: 50%;
 }
 .logo{
-  position: relative;
-  top: -5vw;
-  left: 82vw;
+  position: absolute;
+  top: 22%;
+  left: 78%;
   height: 5vw;
   width: 12vw;
   background-image: url('../images/white.svg');
@@ -356,6 +383,7 @@ p{
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 @keyframes leaf {
   0% {background-position: 0 0;}
   50% {background-position: 0 3vw;}
