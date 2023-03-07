@@ -1,0 +1,11 @@
+@media only screen and (min-width: 1280px) and (max-width: 1439px){
+  .instruction p{
+    font-size: 20px;
+  }
+  .bye p{
+    font-size: 20px;
+  }
+  .bottom p{
+    font-size: 16px;
+  }
+}

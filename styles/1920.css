@@ -1,0 +1,11 @@
+@media only screen and (min-width: 1920px){
+  .instruction p{
+    font-size: 28px;
+  }
+  .bye p{
+    font-size: 28px;
+  }
+  .bottom{
+    font-size: 24px;
+  }
+}

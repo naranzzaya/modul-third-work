@@ -1,0 +1,49 @@
+@media only screen and (min-width: 1024px) and (max-width: 1279px){
+  .bghi {
+    background-image: url('../images/hi_1024.svg');
+  }
+  .bg1 {
+    background-image: url('../images/background_1_1024.svg');
+  }
+  .bg2 {
+    background-image: url('../images/background_2_1024.svg');
+  }
+  .bg3 {
+    background-image: url('../images/background_3_1024.svg');
+  }
+  .bg4 {
+    background-image: url('../images/background_4_1024.svg');
+  }
+  .bgbye
+  {
+    background-image: url('../images/bye_1024.svg');
+  }
+  .dino{
+    top: 38vw;
+  }
+  .music{
+    top: 32.6vw;
+  }
+  .draggable_bubble{
+    top: 7vw;
+    left: 7vw;
+    height: 17.6vw;
+    width: 82vw;
+    background-image: url('../images/bubbles_1024.svg');
+  }
+  .cloud_six{
+    top: -32vw;
+  }
+  .cloud_seven{
+    width: 25.7%;
+    height: 40%;
+    top: -130%;
+  }
+  .lights{
+    top: 7vw;
+    right: 4vw;
+    width: 92vw;
+    height: 49vw;
+    background-image: url('../images/lights_1024.svg');
+  }
+}
