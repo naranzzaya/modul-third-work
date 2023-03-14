@@ -9,3 +9,27 @@
     font-size: 24px;
   }
 }
+
+@media only screen and (min-width: 2048px){
+  .instruction p{
+    font-size: 32px;
+  }
+  .bye p{
+    font-size: 28px;
+  }
+  .bottom{
+    font-size: 24px;
+  }
+}
+
+@media only screen and (min-width: 2560px){
+  .instruction p{
+    font-size: 40px;
+  }
+  .bye p{
+    font-size: 28px;
+  }
+  .bottom{
+    font-size: 24px;
+  }
+}
