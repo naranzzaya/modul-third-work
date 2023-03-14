@@ -5,8 +5,8 @@
   .bye p{
     font-size: 28px;
   }
-  .bottom{
-    font-size: 24px;
+  .bottom p{
+    font-size: 26px;
   }
 }
 
@@ -15,10 +15,10 @@
     font-size: 32px;
   }
   .bye p{
-    font-size: 28px;
+    font-size: 32px;
   }
-  .bottom{
-    font-size: 24px;
+  .bottom p{
+    font-size: 30px;
   }
 }
 
@@ -27,9 +27,9 @@
     font-size: 40px;
   }
   .bye p{
-    font-size: 28px;
+    font-size: 40px;
   }
-  .bottom{
-    font-size: 24px;
+  .bottom p{
+    font-size: 34px;
   }
 }
