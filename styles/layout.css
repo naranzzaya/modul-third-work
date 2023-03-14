@@ -24,12 +24,13 @@ p{
   box-sizing: border-box;
   border-radius: 1vw;
   border: 0.6vw solid #FFFFFF;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .instruction p{
   font-size: 22px;
-  margin-left: auto;
-  margin-top: 20px;
+  text-align: center;
 }
 /* background */
 body {
@@ -93,7 +94,7 @@ body {
   height: 35vw;
   top: 13.6vw;
   right: 32.2vw;
-  z-index: 1;
+  z-index: 10;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -161,10 +162,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.none{
-  display: none;
-}
 /* element */
+
 .leaves{
   position: fixed;
   bottom: 0;
@@ -324,14 +323,13 @@ body {
   box-sizing: border-box;
   border-radius: 1vw;
   border: 0.6vw solid #FFFFFF;
-  align-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .bye p{
   font-size: 22px;
-  margin-left: auto;
-  margin-top: 15px;
-  align: center;
-  justify-content: center;
+  text-align: center;
 }
 .bottom{
   margin:auto;
@@ -389,7 +387,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+.none{
+  display: none;
+}
 @keyframes leaf {
   0% {background-position: 0 0;}
   50% {background-position: 0 3vw;}
