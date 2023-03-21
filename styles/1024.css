@@ -1,4 +1,10 @@
 @media only screen and (min-width: 1024px) and (max-width: 1279px){
+  .instruction p{
+    font-size: 18px;
+  }
+  .bye p{
+    font-size: 18px;
+  }
   .bghi {
     background-image: url('../images/hi_1024.svg');
   }
